@@ -2,7 +2,7 @@ import socket
 import requests
 import time
 import random
-import sys
+import os
 import signal
 
 TARGET_IP = "YOUR_VM_PUBLIC_IP"
@@ -13,7 +13,7 @@ PORTS_TO_SCAN = [22, 23, 80, 443, 3389, 8080, 27017]
 def force_exit(sig, frame):
     # Override loop when Ctrl+C is pressed
     print("\nQuit signal received. Shutting down simulator.")
-    sys.exit(0)
+    os._exit(0)
 
 # Register the signal handler to listen for Ctrl+C (SIGINT)
 signal.signal(signal.SIGINT, force_exit)
