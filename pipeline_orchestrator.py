@@ -9,8 +9,8 @@ WEBHOOK_URL = ""
 
 # Synapse SQL Configuration
 SYNAPSE_SERVER = "" # YOUR_WORKSPACE_NAME-ondemand.sql.azuresynapse.net
-DATABASE = "" # YOUR_DATABASE_NAME
-SQL_USER = "" # YOUR_SQL_USERNAME
+DATABASE = "TelemetryDB" # YOUR_DATABASE_NAME
+SQL_USER = "sqladminuser" # YOUR_SQL_USERNAME
 SQL_PASS = "" # YOUR_SQL_PASSWORD
 
 def start_vm_via_webhook():

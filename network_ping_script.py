@@ -5,7 +5,7 @@ import random
 import os
 import signal
 
-TARGET_IP = ""
+TARGET_IP = "20.127.108.146"
 
 # Mix web ports with admin ports for a combo of allowed and denied traffic
 PORTS_TO_SCAN = [22, 23, 80, 443, 3389, 8080, 27017]
