@@ -1,3 +1,6 @@
+-- SQL statement for retrieving network flow data from JSON files stored in a specified URL. 
+-- The query uses OPENROWSET to read the JSON files, and 
+-- OPENJSON to parse the nested JSON structure into a tabular format.
 SELECT 
     Records.EventTime,
     Records.MacAddress,
